@@ -5,7 +5,6 @@ import org.seckill.entity.Seckill;
 
 import java.util.Date;
 import java.util.List;
-
 public interface SeckillDao {
     /**
      * 减库存，
