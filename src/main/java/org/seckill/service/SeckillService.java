@@ -1,5 +1,6 @@
 package org.seckill.service;
 
+
 import org.seckill.dto.*;
 import org.seckill.entity.Seckill;
 import org.seckill.exception.RepeatKillException;
@@ -8,11 +9,10 @@ import org.seckill.exception.SeckillException;
 
 import java.util.List;
 
-/**
- * 业务接口
- */
+
 
 public interface SeckillService {
+
     /**
      * 查询所有秒杀记录
      */
@@ -37,4 +37,4 @@ public interface SeckillService {
      * @param md5
      */
     SeckillExecution executeSeckill(long seckillId, long userPhone, String md5) throws SeckillException, RepeatKillException, SeckillCloseException;
-}
+
