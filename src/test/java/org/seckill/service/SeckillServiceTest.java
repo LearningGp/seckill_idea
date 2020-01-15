@@ -39,11 +39,11 @@ public class SeckillServiceTest {
 
     @Test
     public void testSeckillLogic() {
-        long id = 1000;
+        long id = 1002;
         Exposer exposer = seckillService.exportSeckillUrl(id);
         if(exposer.isExposed()){
             logger.info("exposer={}",exposer);
-            long phone = 13868216256L;
+            long phone = 13868216856L;
             String md5 = exposer.getMd5();
 
             try {
