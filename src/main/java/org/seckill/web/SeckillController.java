@@ -20,14 +20,14 @@ import java.util.Date;
 import java.util.List;
 
 @Controller
-@RequestMapping("/seckill")//url:/模块/资源/{id}/细分
+//url:/模块/资源/{id}/细分
 public class SeckillController {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     private SeckillService seckillService;
 
-    @RequestMapping(name = "/list",method = RequestMethod.GET)
+    @RequestMapping(value = "/list",method = RequestMethod.GET)
     public String list(Model model){
         //获取列表页
         List<Seckill> list=seckillService.getSeckillList();
