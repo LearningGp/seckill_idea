@@ -13,11 +13,6 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-/**
- * 配置spring和junit整合，junit启动时加载springIOC容器
- */
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:spring/spring-dao.xml"})
 public class SeckillDaoTest {
 
     //注入dao实现依赖
