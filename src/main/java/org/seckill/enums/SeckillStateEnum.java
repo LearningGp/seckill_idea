@@ -3,7 +3,7 @@ package org.seckill.enums;
 /**
  * 使用枚举表述常量
  */
-public enum SeckillStateEnum {
+public  enum SeckillStateEnum {
     SUCCESS(1,"秒杀成功"),
     END(0,"秒杀结束"),
     REPEAT_KILL(-1,"重复秒杀"),
