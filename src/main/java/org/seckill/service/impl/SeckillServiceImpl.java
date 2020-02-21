@@ -40,7 +40,7 @@ public class SeckillServiceImpl implements SeckillService {
     private final String slat="fsds$@#$sdfSADASsa6523sdfsd";//md5盐值字符串，用于混淆
 
     public List<Seckill> getSeckillList() {
-        return seckillDao.queryAll(0,4);
+        return seckillDao.queryAll(0,10);
     }
 
     public Seckill getById(long seckillId) {
